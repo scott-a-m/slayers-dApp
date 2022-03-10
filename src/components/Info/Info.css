@@ -1,0 +1,40 @@
+
+
+
+#desolator {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+#desolator-container {
+  text-align: center;
+}
+
+.slay-button {
+  background-color: transparent;
+  color: yellow;
+  outline: yellow;
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+}
+
+.slay-button:hover {
+  background-color: yellow;
+  color: black;
+
+}
+
+.slay-button:focus {
+  background-color: yellow;
+  color: black;
+
+}
+
+
+
+.btn-container {
+    text-align: center;  
+}
+
+/* @media(max-width: 600px) {#desolator {max-width: 300px;}} */

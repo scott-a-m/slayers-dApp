@@ -1,0 +1,60 @@
+.header-container {
+  text-align: center;
+  }
+
+p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Supermercado One', cursive;
+}
+
+body {
+  background: black;
+  padding-top: 3rem;
+}
+
+#desolator {
+  max-width: 500px;
+}
+
+#desolator-container {
+  text-align: center;
+}
+
+.connect-wallet-container {
+  text-align: center;
+}
+
+@media(max-width: 600px) { #desolator {
+  max-width: 300px;
+} .main-heading {
+  font-size: 3rem;
+}
+.sub-heading {
+ 
+ font-size: 1.5rem;
+}}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color:red;
+}
+
+#start-slaying {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#buildspace {
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+@media(max-width: 600px) { p{ font-size: 1.1rem;} #start-slaying {font-size: 1.3rem;} }
