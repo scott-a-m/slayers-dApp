@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Play from "./pages/play";
+import Play from "./pages/Play";
 const App = () => {
   return (
     <BrowserRouter>
