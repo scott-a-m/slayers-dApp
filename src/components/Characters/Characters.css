@@ -1,0 +1,26 @@
+.character-item {
+  text-align: center;
+}
+
+.character-image {
+
+  height: 400px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.names {
+  font-size: 2rem;
+}
+
+.heading {
+  color: red;
+  font-family: 'Nosifer', cursive;
+  text-shadow: 5px 2px 10px red;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+
+
+}

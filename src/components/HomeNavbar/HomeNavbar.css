@@ -1,0 +1,51 @@
+.logo {
+  color: red !important;
+  font-family: 'Nosifer', cursive;   
+}
+
+.navbar {
+  background-color:  #1a1a1a !important;
+  color: white;
+
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: red !important;
+}
+
+#my-nav {
+  margin-bottom: 1500px;
+}
+
+.slayers-nav-link {
+  font-family: 'Supermercado One', cursive !important;
+  font-size: 1rem;
+
+}
+
+
+
+
+.small-slay-button {
+  background-color: transparent;
+  color: yellow;
+  outline: yellow;
+  font-size: 1rem;
+  font-family: 'Nosifer', cursive;
+}
+
+.small-slay-button:hover {
+  background-color: yellow;
+  color: black;
+
+}
+
+.small-slay-button:focus {
+  background-color: yellow;
+  color: black;
+
+}

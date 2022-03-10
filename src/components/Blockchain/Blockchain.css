@@ -1,0 +1,44 @@
+.contact-block {
+  text-align: center !important;
+}
+
+.contact-img {
+  height: 60px;
+  filter: invert(100%);
+  
+}
+
+
+.credits-block {
+  text-align: left;
+  font-size: 1rem;
+}
+
+#credits-heading {
+  margin-top: 0;
+  padding-top: 1rem;;
+}
+
+.contact-img:hover {
+  height: 70px;
+}
+
+@media(max-width: 600px) { .contact-img {
+  height: 40px;
+  
+}
+
+.contact-img:hover {
+  height: 50px;
+} }
+
+.contact-icon {
+  background: black;
+  color:white;
+  border: solid 1px black;
+}
+
+.contact-icon:Hover {
+  color: red;
+  cursor: pointer;
+}

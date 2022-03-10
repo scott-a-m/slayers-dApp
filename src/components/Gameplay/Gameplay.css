@@ -1,0 +1,10 @@
+#gameplay {
+  max-width: 100%;
+}
+
+.gameplay-img {
+  text-align: center;
+}
+
+/* @media(max-width: 600px) {#gameplay {max-width: 300px;}} */
+
