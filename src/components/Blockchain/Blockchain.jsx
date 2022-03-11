@@ -61,10 +61,7 @@ const Blockchain = () => {
         <h1 className="heading" id="contact">
           Contact
         </h1>
-        <div
-          id="contact-block"
-          style={{ textAlign: "center", marginBottom: "4rem" }}
-        >
+        <div id="contact-block" style={{ textAlign: "center" }}>
           <p id="designer">developed by Scott Mitchell</p>
           <a
             href="https://github.com/scott-a-m"
@@ -111,10 +108,15 @@ const Blockchain = () => {
             />
           </a>
         </div>
+        <div
+          id="buildspace"
+          style={{ marginBottom: "2rem", marginTop: "1rem" }}
+        >
+          <a href="buildspace.so/" target="_blank">
+            with Buildspace
+          </a>
+        </div>
         <div>
-          <h1 className="heading" id="credits-heading">
-            Credits
-          </h1>
           <p className="credits-block">
             Game music from{" "}
             <a href="https://www.playonloop.com" target="_blank">

@@ -33,6 +33,10 @@ body {
 .sub-heading {
  
  font-size: 1.5rem;
+}
+
+.credits-block {
+  font-size: 0.8rem;
 }}
 
 a {
@@ -56,5 +60,6 @@ a:hover {
   font-size: 0.8rem;
   margin-top: 2rem;
 }
+
 
 @media(max-width: 600px) { p{ font-size: 1.1rem;} #start-slaying {font-size: 1.3rem;} }
