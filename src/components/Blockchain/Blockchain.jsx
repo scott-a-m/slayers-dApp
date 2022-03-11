@@ -76,7 +76,7 @@ const Blockchain = () => {
             />
           </a>
           <a
-            href="https://twitter.com/scotts-dev"
+            href="https://twitter.com/scotts_dev"
             target="_blank"
             rel="noreferrer"
           >
