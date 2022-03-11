@@ -26,11 +26,6 @@ const Home = () => {
             </button>
           </a>
         </div>
-        <div id="buildspace">
-          <a href="buildspace.so/" target="_blank">
-            learn web3 with Buildspace
-          </a>
-        </div>
       </div>
     </div>
   );
