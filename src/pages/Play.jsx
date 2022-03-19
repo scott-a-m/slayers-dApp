@@ -109,9 +109,7 @@ const Play = () => {
         const account = accounts[0];
         setCurrentAccount(account);
       } else {
-        return alert(
-          "Please make sure you have an active account to connect to."
-        );
+        return delayedMsg("please connect wallet to start slaying", 3000);
       }
     } catch (error) {
       console.log(error);
