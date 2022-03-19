@@ -57,7 +57,7 @@ const Play = () => {
         setContract(gameContract);
       }
     } catch (error) {
-      console.log(error);
+      return delayedMsg("An error occured please try again", 3000);
     }
   };
 
@@ -79,10 +79,8 @@ const Play = () => {
     };
 
     let chainId = await ethereum.request({ method: "eth_chainId" });
-    console.log("Connected to chain " + chainId);
 
     const appChainId = chains[chainName];
-    console.log(appChainId);
 
     if (chainId !== appChainId) {
       delayedMsg(
@@ -100,7 +98,7 @@ const Play = () => {
     try {
       const { ethereum } = window;
 
-      if (!ethereum) return console.log("Please install Metamask.");
+      if (!ethereum) return delayedMsg("please install metamask", 3000);
 
       const chain = await checkChain("Rinkeby");
       if (!chain) return;
@@ -111,7 +109,9 @@ const Play = () => {
         const account = accounts[0];
         setCurrentAccount(account);
       } else {
-        console.log("No authorised account found");
+        return alert(
+          "Please make sure you have an active account to connect to."
+        );
       }
     } catch (error) {
       console.log(error);
@@ -134,23 +134,17 @@ const Play = () => {
       });
       setCurrentAccount(accounts[0]);
     } catch (error) {
-      console.log(error);
+      return delayedMsg("An error occured please try again", 3000);
     }
   };
 
   const fetchNFTMetadata = async () => {
-    console.log("checking for a character on address", currentAccount);
-
     const txn = await contract.checkIfUserHasNFT();
 
-    console.log(txn);
-
     if (txn.name) {
-      console.log("User has character NFT");
       setCharacterNFT(transformCharacterData(txn));
-    } else {
-      console.log("No character NFT found");
     }
+    return;
   };
 
   useEffect(() => {
@@ -161,7 +155,6 @@ const Play = () => {
 
   useEffect(() => {
     if (currentAccount) {
-      console.log("Current Account", currentAccount);
       checkContract();
     }
   }, [currentAccount]);

@@ -81,10 +81,8 @@ const Arena = ({
       attackAudio.play();
       attackAudio.loop = true;
       setAttackState("attacking");
-      console.log("Attacking boss...");
       const attackTxn = await contract.attackBoss({ gasLimit: 3000000 });
       await attackTxn.wait();
-      console.log("attackTxn:", attackTxn);
       setAttackState("");
       attackAudio.pause();
       audio3.play();
@@ -94,8 +92,6 @@ const Arena = ({
       attackAudio.pause();
       audio3.play();
       audio3.loop = true;
-      console.error("Error attacking boss:", error);
-      console.log(error.code);
       setBtn({ disabled: false, opacity: 1 });
 
       if (error.code === "UNSUPPORTED_OPERATION")
@@ -110,7 +106,6 @@ const Arena = ({
     if (!chain) return;
 
     const bossTxn = await contract.getBigBoss();
-    console.log("Boss:", bossTxn);
     setBoss(transformCharacterData(bossTxn));
   };
 
