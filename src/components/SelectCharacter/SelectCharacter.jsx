@@ -24,26 +24,18 @@ const SelectCharacter = ({
       const chain = await checkChain("Rinkeby");
       if (!chain) return;
 
-      console.log("Getting contract characters to mint");
       const charactersTxn = await contract.getAllDefaultCharacters();
-      console.log("charactersTxn:", charactersTxn);
       const gameCharacters = charactersTxn.map((characterData) =>
         transformCharacterData(characterData)
       );
       setCharacters(gameCharacters);
     } catch (error) {
-      console.error("Something went wrong fetching characters:", error);
       return delayedMsg("Something went wrong, please try again", 2000);
     }
   };
 
   const onCharacterMint = async (sender, tokenId, characterIndex) => {
-    console.log(
-      `CharacterNFTMinted - sender: ${sender} tokenId: ${tokenId.toNumber()} characterIndex: ${characterIndex.toNumber()}`
-    );
-
     const characterNFT = await contract.checkIfUserHasNFT();
-    console.log("CharacterNFT: ", characterNFT);
     setCharacterNFT(transformCharacterData(characterNFT));
   };
 
@@ -53,17 +45,13 @@ const SelectCharacter = ({
     try {
       const chain = await checkChain("Rinkeby");
       if (!chain) return;
-
-      console.log("Minting character in progress...");
       setMintingCharacter("Minting Character");
       const mintTxn = await contract.mintCharacterNFT(characterId, {
         gasLimit: 3000000,
       });
       await mintTxn.wait();
       setMintingCharacter("Minting Complete");
-      console.log("mintTxn:", mintTxn);
     } catch (error) {
-      console.warn("MintCharacterAction Error:", error);
       setMintingCharacter("");
       setBtn({ disabled: false, opacity: 1 });
       if (error.code === "UNSUPPORTED_OPERATION")
