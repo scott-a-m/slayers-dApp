@@ -5,6 +5,7 @@ import Characters from "../components/Characters/Characters";
 import Gameplay from "../components/Gameplay/Gameplay";
 import Blockchain from "../components/Blockchain/Blockchain";
 import "../Home.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         <Gameplay />
         <Blockchain />
         <div className="btn-container">
-          <a href="https://slayers-play.netlify.app/" target="_blank">
+          <Link to="/play" target="_blank">
             <button
               type="button"
               id="start-slaying"
@@ -24,7 +25,7 @@ const Home = () => {
             >
               START SLAYING
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

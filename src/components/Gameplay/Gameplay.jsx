@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Gameplay.css";
+import { Link } from "react-router-dom";
 
 const Gameplay = () => {
   return (
@@ -8,9 +9,9 @@ const Gameplay = () => {
       <div className="row Gameplay">
         <div className="col-lg-6">
           <p>
-            Every time you attack the desolator you inflict standard attack damage
-            on him. If you're lucky it will be a Super Attack (triple damage), or
-            very lucky, a Mega Attack (5x damage).
+            Every time you attack the desolator you inflict standard attack
+            damage on him. If you're lucky it will be a Super Attack (triple
+            damage), or very lucky, a Mega Attack (5x damage).
           </p>
           <p>
             Conversely, after each attack the desolator inflicts a 50HP attack
@@ -24,13 +25,14 @@ const Gameplay = () => {
           </p>
           <p>Finally, good luck and let's save the metaverse!</p>
           <div className="btn-container">
-          <a href="https://slayers-play.netlify.app/" target="_blank">
-            <button type="button" className="btn btn-warning   slay-button">
-              START SLAYING
-            </button>
-          </a>
-          <br /><br />
-        </div>
+            <Link to="/play" target="_blank">
+              <button type="button" className="btn btn-warning   slay-button">
+                START SLAYING
+              </button>
+            </Link>
+            <br />
+            <br />
+          </div>
         </div>
         <div className="col-lg-6 gameplay-img">
           <img

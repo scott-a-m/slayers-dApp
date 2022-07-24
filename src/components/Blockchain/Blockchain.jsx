@@ -62,7 +62,12 @@ const Blockchain = () => {
           Contact
         </h1>
         <div id="contact-block" style={{ textAlign: "center" }}>
-          <p id="designer">developed by Scott Mitchell</p>
+          <p id="designer">
+            developed by{" "}
+            <a href="https://scottsdev.net" target="_blank" rel="noreferrer">
+              Scott Mitchell
+            </a>
+          </p>
           <a
             href="https://github.com/scott-a-m"
             target="_blank"
@@ -99,7 +104,7 @@ const Blockchain = () => {
               className="contact-icon"
             />
           </a>
-          <a href="mailto:scott_a_mitchell@163.com">
+          <a href="mailto:scott@scottsdev.net">
             <FontAwesomeIcon
               icon={faEnvelope}
               size="2x"
