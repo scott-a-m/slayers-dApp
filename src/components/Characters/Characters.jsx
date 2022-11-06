@@ -1,54 +1,47 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Characters.css";
 
 const Characters = () => {
   const characters = [
     {
       name: "Ninja",
-      imageURI:
-        "https://scott-a-m.github.io/slayers/slayers-ninja.png",
+      imageURI: "https://scott-a-m.github.io/slayers/slayers-ninja.png",
       maxHp: 400,
       attackDamage: 200,
     },
     {
       name: "Swordsman",
-      imageURI:
-        "https://scott-a-m.github.io/slayers/slayers-swordsman.png",
+      imageURI: "https://scott-a-m.github.io/slayers/slayers-swordsman.png",
       maxHp: 500,
       attackDamage: 170,
     },
     {
       name: "Blade",
-      imageURI:
-        "https://scott-a-m.github.io/slayers/slayers-blade.png",
+      imageURI: "https://scott-a-m.github.io/slayers/slayers-blade.png",
       maxHp: 450,
       attackDamage: 190,
     },
     {
       name: "Quicksilver",
-      imageURI:
-        "https://scott-a-m.github.io/slayers/slayers-quicksilver.png",
+      imageURI: "https://scott-a-m.github.io/slayers/slayers-quicksilver.png",
       maxHp: 500,
       attackDamage: 150,
     },
     {
       name: "Slayer",
-      imageURI:
-        "https://scott-a-m.github.io/slayers/slayers-slayer.png",
+      imageURI: "https://scott-a-m.github.io/slayers/slayers-slayer.png",
       maxHp: 450,
       attackDamage: 180,
     },
     {
       name: "Mystique",
-      imageURI:
-        "https://scott-a-m.github.io/slayers/slayers-mystique.png",
+      imageURI: "https://scott-a-m.github.io/slayers/slayers-mystique.png",
       maxHp: 550,
       attackDamage: 150,
     },
     {
       name: "Slash",
-      imageURI:
-        "https://scott-a-m.github.io/slayers/slayers-slash.png",
+      imageURI: "https://scott-a-m.github.io/slayers/slayers-slash.png",
       maxHp: 500,
       attackDamage: 175,
     },

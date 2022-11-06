@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Blockchain.css";
-import freecodecampLogo from "../../assets/img/free-code-camp-logo.svg";
-import twitterLogo from "../../assets/img/icons8-twitter.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFreeCodeCamp,
@@ -11,9 +9,6 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Blockchain = () => {
-  const twrLogo = twitterLogo;
-  const fccLogo = freecodecampLogo;
-
   return (
     <div className="row general-info">
       <div className="col-lg-7">

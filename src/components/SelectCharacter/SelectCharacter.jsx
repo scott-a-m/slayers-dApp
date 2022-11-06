@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./SelectCharacter.css";
-import { ethers } from "ethers";
-import { CONTRACT_ADDRESS, transformCharacterData } from "../../constants";
-import abi from "../../utils/Slayers.json";
+import { transformCharacterData } from "../../constants";
 import Loader from "../Loader/Loader";
 
 const SelectCharacter = ({
-  characterNFT,
   setCharacterNFT,
   delayedMsg,
   checkChain,
   contract,
   errorMsg,
 }) => {
-  const gameAbi = abi.abi;
-
   const [characters, setCharacters] = useState([]);
   const [mintingCharacter, setMintingCharacter] = useState("");
   const [btn, setBtn] = useState({ disabled: false, opacity: 1 });

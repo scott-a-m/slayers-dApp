@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Arena.css";
-import { ethers } from "ethers";
-import { CONTRACT_ADDRESS, transformCharacterData } from "../../constants";
-import abi from "../../utils/Slayers.json";
+import { transformCharacterData } from "../../constants";
 import Loader from "../Loader/Loader";
 
 const Arena = ({
@@ -49,8 +47,6 @@ const Arena = ({
         "https://scott-a-m.github.io/hosted-assets/POL-countering-evil-short.wav"
       )
   );
-
-  const gameAbi = abi.abi;
 
   const checkBossState = () => {
     if (boss.hp === 0) {
