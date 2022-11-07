@@ -70,7 +70,7 @@ const Arena = ({
     setBtn({ disabled: true, opacity: 0.5 });
 
     try {
-      const chain = await checkChain("Rinkeby");
+      const chain = await checkChain("Goerli");
       if (!chain) return;
 
       audio3.pause();
@@ -98,7 +98,7 @@ const Arena = ({
   };
 
   const getBoss = async () => {
-    const chain = await checkChain("Rinkeby");
+    const chain = await checkChain("Goerli");
     if (!chain) return;
 
     const bossTxn = await contract.getBigBoss();

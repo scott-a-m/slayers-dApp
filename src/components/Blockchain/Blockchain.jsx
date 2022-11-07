@@ -16,17 +16,17 @@ const Blockchain = () => {
           Blockchain
         </h1>
         <p>
-          Slayers lives on Ethereum's Rinkeby Test Network. This means that all
+          Slayers lives on Ethereum's Goerli Test Network. This means that all
           transactions are processed using Test Eth which won't cost you a
           thing. You can get some here from{" "}
-          <a href="https://faucets.chain.link/rinkeby" target="_blank">
+          <a href="https://faucets.chain.link/goerli" target="_blank">
             Chainlink
           </a>
           . It it recommended that you create a new metamask wallet specifically
           for use on test networks. Also, <strong>never</strong> send real Eth
           to your testnet address. One you dont need to because you can claim
-          Rinkeby test Eth for free, and more importantly, two because if you
-          did you would not be able to recover it. To find out more about test
+          Goerli test Eth for free, and more importantly, two because if you did
+          you would not be able to recover it. To find out more about test
           networks, click{" "}
           <a
             href="https://medium.com/compound-finance/the-beginners-guide-to-using-an-ethereum-test-network-95bbbc85fc1d"

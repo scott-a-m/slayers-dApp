@@ -16,9 +16,8 @@ const SelectCharacter = ({
 
   const getCharacters = async () => {
     try {
-      const chain = await checkChain("Rinkeby");
+      const chain = await checkChain("Goerli");
       if (!chain) return;
-
       const charactersTxn = await contract.getAllDefaultCharacters();
       const gameCharacters = charactersTxn.map((characterData) =>
         transformCharacterData(characterData)
@@ -38,7 +37,7 @@ const SelectCharacter = ({
     setBtn({ disabled: true, opacity: 0.5 });
 
     try {
-      const chain = await checkChain("Rinkeby");
+      const chain = await checkChain("Goerli");
       if (!chain) return;
       setMintingCharacter("Minting Character");
       const mintTxn = await contract.mintCharacterNFT(characterId, {

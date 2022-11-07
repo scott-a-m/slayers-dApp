@@ -76,9 +76,11 @@ const Play = () => {
     const chains = {
       Rinkeby: "0x4",
       Ropsten: "0x3",
+      Goerli: "0x5",
     };
 
     let chainId = await ethereum.request({ method: "eth_chainId" });
+    console.log(chainId);
 
     const appChainId = chains[chainName];
 
@@ -100,7 +102,7 @@ const Play = () => {
 
       if (!ethereum) return delayedMsg("please install metamask", 3000);
 
-      const chain = await checkChain("Rinkeby");
+      const chain = await checkChain("Goerli");
       if (!chain) return;
 
       const accounts = await ethereum.request({ method: "eth_accounts" });
@@ -124,7 +126,7 @@ const Play = () => {
       if (!checked)
         return delayedMsg("Please first acknowledge the notice below", 3000);
 
-      const chain = await checkChain("Rinkeby");
+      const chain = await checkChain("Goerli");
       if (!chain) return;
 
       const accounts = await ethereum.request({
@@ -193,7 +195,7 @@ const Play = () => {
           <div id="cont">
             <div id="notice">
               <p id="notice-text">
-                Slayers lives on Ethereum's Rinkeby Test Network.{" "}
+                Slayers lives on Ethereum's Goerli Test Network.{" "}
                 <strong>Never</strong> send real Eth to your testnet address. If
                 you did, you would lose it.{" "}
                 <a
@@ -203,7 +205,7 @@ const Play = () => {
                   Testnets
                 </a>{" "}
                 use test Eth which you can get for free from{" "}
-                <a href="https://faucets.chain.link/rinkeby" target="_blank">
+                <a href="https://faucets.chain.link/goerli" target="_blank">
                   Chainlink
                 </a>{" "}
                 or other faucets. It is recommended that you create a separate
